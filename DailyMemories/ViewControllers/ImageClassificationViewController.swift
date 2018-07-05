@@ -32,32 +32,22 @@ class ImageClassificationViewController: UIViewController {
     func classifyImage(from image: UIImage) {
         
         // 1. Create Vision Core ML model
-        let model = ArtistClassifier()
-        guard let visionCoreMLModel = try? VNCoreMLModel(for: model.model) else { return }
+        
+        // ** YOUR CODE GOES HERE ** //
         
         // 2. Create Vision Core ML request
-        let request = VNCoreMLRequest(model: visionCoreMLModel,
-                                      completionHandler: self.handleClassificationResults)
+        
+        // ** YOUR CODE GOES HERE ** //
 
         // 3. Create request handler
         // *First convert image: UIImage to CGImage + get CGImagePropertyOrientation*
-        guard let cgImage = image.cgImage else {
-            fatalError("Unable to convert \(image) to CGImage.")
-        }
-        let cgImageOrientation = ImageHelper.convertToCGImageOrientation(from: image)
         
-        let handler = VNImageRequestHandler(cgImage: cgImage, orientation: cgImageOrientation)
+        // ** YOUR CODE GOES HERE ** //
     
         // 4. Perform request on handler
         // Ensure that it is done on an appropriate queue (not main queue)
-        self.captionLabel.text = "Classifying artist..."
-        DispatchQueue.global(qos: .userInitiated).async {
-            do {
-                try handler.perform([request])
-            } catch {
-                print("Error performing artist classification")
-            }
-        }
+        
+        // ** YOUR CODE GOES HERE ** //
     }
     
     // 5. Do something with the results
@@ -66,14 +56,8 @@ class ImageClassificationViewController: UIViewController {
     private func handleClassificationResults(for request: VNRequest, error: Error?) {
         
         // 👨🏿‍💻 YOUR CODE GOES HERE
-        DispatchQueue.main.async {
-            guard let classifications = request.results as? [VNClassificationObservation],
-                classifications.isEmpty != true else {
-                    self.captionLabel.text = "Unable to classify scene.\n\(error!.localizedDescription)"
-                    return
-            }
-            self.updateCaptionLabel(classifications)
-        }
+        
+        // ** YOUR CODE GOES HERE ** //
     }
     
     // MARK: Helper methods

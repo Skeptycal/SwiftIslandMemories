@@ -13,9 +13,7 @@
 		357C7A771F5C943700A0A33C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 357C7A761F5C943700A0A33C /* Assets.xcassets */; };
 		357C7A7A1F5C943700A0A33C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 357C7A781F5C943700A0A33C /* LaunchScreen.storyboard */; };
 		357D5B9A20ED6C6F00A4CDC9 /* StyleTransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357D5B9920ED6C6F00A4CDC9 /* StyleTransferViewController.swift */; };
-		357D5B9C20ED6DFA00A4CDC9 /* VanGoghStyleTransfer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 357D5B9B20ED6DFA00A4CDC9 /* VanGoghStyleTransfer.mlmodel */; };
 		357D5B9E20EDE44000A4CDC9 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357D5B9D20EDE44000A4CDC9 /* ImageHelper.swift */; };
-		35A4CD8720ECFC7D00A66917 /* ArtistClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 35A4CD8620ECFC7D00A66917 /* ArtistClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +25,7 @@
 		357C7A791F5C943700A0A33C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		357C7A7B1F5C943700A0A33C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		357D5B9920ED6C6F00A4CDC9 /* StyleTransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleTransferViewController.swift; sourceTree = "<group>"; };
-		357D5B9B20ED6DFA00A4CDC9 /* VanGoghStyleTransfer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = VanGoghStyleTransfer.mlmodel; sourceTree = "<group>"; };
 		357D5B9D20EDE44000A4CDC9 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
-		35A4CD8620ECFC7D00A66917 /* ArtistClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ArtistClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +73,6 @@
 		357D5B9F20EDE45000A4CDC9 /* MLModels */ = {
 			isa = PBXGroup;
 			children = (
-				357D5B9B20ED6DFA00A4CDC9 /* VanGoghStyleTransfer.mlmodel */,
-				35A4CD8620ECFC7D00A66917 /* ArtistClassifier.mlmodel */,
 			);
 			path = MLModels;
 			sourceTree = "<group>";
@@ -164,8 +158,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35A4CD8720ECFC7D00A66917 /* ArtistClassifier.mlmodel in Sources */,
-				357D5B9C20ED6DFA00A4CDC9 /* VanGoghStyleTransfer.mlmodel in Sources */,
 				357C7A721F5C943600A0A33C /* ImageClassificationViewController.swift in Sources */,
 				357C7A701F5C943600A0A33C /* AppDelegate.swift in Sources */,
 				357D5B9A20ED6C6F00A4CDC9 /* StyleTransferViewController.swift in Sources */,

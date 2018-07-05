@@ -46,22 +46,16 @@ class StyleTransferViewController: UIViewController {
         }
         
         // 1. Create Core ML model
-        let model = VanGoghStyleTransfer()
-        guard let pixelBuffer = ImageHelper.convertToCVPixelBuffer(from: image) else {
-            fatalError("Could not convert inputImage from UIImage to CVPixelBuffer")
-        }
+        
+        // ** YOUR CODE GOES HERE ** //
         
         // 2. Create Core ML prediction
-        let modelPrediction = try? model.prediction(image: pixelBuffer, index: styleArray)
         
-        guard let stylizedPixelBuffer = modelPrediction?.stylizedImage else {
-            fatalError("Could not access model prediction stylizedImage")
-        }
+        // ** YOUR CODE GOES HERE ** //
         
         // 3. Update UI with stylizedImage
-        let stylizedImage = ImageHelper.convertToUIImage(from: stylizedPixelBuffer)
         
-        updateUI(styleTransferredImage: stylizedImage)
+        // ** YOUR CODE GOES HERE ** //
     }
     
     private func createStyleArray(numStyles: Int, styleIndex: Int) -> MLMultiArray? {
